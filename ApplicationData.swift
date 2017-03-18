@@ -17,7 +17,8 @@ struct ApplicationData {
         
         let center = NotificationCenter.default
         let name = Notification.Name("Update Data")
-        center.post(name: name, object: nil, userInfo: nil)
+        let info = ["type": "New Name"]
+        center.post(name: name, object: nil, userInfo: info)
     }
 }
 var AppData = ApplicationData(names: [])

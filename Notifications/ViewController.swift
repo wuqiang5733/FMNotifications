@@ -21,7 +21,12 @@ class ViewController: UIViewController {
         center.addObserver(self, selector: #selector(updateCounter(notification:)), name: name, object: nil)
     }
     func updateCounter(notification: Notification) {
-        let current = AppData.names
-        counter.text = String(current.count)
+        if let info = notification.userInfo {
+            let type = info["type"] as? String
+            if type == "New Name" {
+                let current = AppData.names
+                counter.text = String(current.count)
+            }
+        }
     }
 }
