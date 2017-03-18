@@ -15,12 +15,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let center = NotificationCenter.default
         let name = Notification.Name("Update Data")
         center.addObserver(self, selector: #selector(updateCounter(notification:)), name: name, object: nil)
     }
-    func updateCounter(notification: Notification) {
+    func updateCounter(notification: NSNotification) {
         if let info = notification.userInfo {
             let type = info["type"] as? String
             if type == "New Name" {
@@ -28,5 +27,8 @@ class ViewController: UIViewController {
                 counter.text = String(current.count)
             }
         }
+        let center = NotificationCenter.default
+        let name = Notification.Name("Update Data")
+        center.removeObserver(self, name: name, object: nil)
     }
 }
