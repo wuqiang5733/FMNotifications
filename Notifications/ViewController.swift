@@ -6,20 +6,22 @@
 //  Copyright © 2017年 WuQiang. All rights reserved.
 //
 
+
+
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var counter: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let center = NotificationCenter.default
+        let name = Notification.Name("Update Data")
+        center.addObserver(self, selector: #selector(updateCounter(notification:)), name: name, object: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func updateCounter(notification: Notification) {
+        let current = AppData.names
+        counter.text = String(current.count)
     }
-
-
 }
-

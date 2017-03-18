@@ -15,6 +15,8 @@
 		043706D31E7D4D38001EB75E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043706D11E7D4D38001EB75E /* LaunchScreen.storyboard */; };
 		043706DE1E7D4D38001EB75E /* NotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043706DD1E7D4D38001EB75E /* NotificationsTests.swift */; };
 		043706E91E7D4D38001EB75E /* NotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043706E81E7D4D38001EB75E /* NotificationsUITests.swift */; };
+		043706F71E7D4D72001EB75E /* ApplicationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043706F61E7D4D72001EB75E /* ApplicationData.swift */; };
+		043706FB1E7D550A001EB75E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043706FA1E7D550A001EB75E /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		043706E41E7D4D38001EB75E /* NotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043706E81E7D4D38001EB75E /* NotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsUITests.swift; sourceTree = "<group>"; };
 		043706EA1E7D4D38001EB75E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043706F61E7D4D72001EB75E /* ApplicationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationData.swift; sourceTree = "<group>"; };
+		043706FA1E7D550A001EB75E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		043706B91E7D4D38001EB75E = {
 			isa = PBXGroup;
 			children = (
+				043706F61E7D4D72001EB75E /* ApplicationData.swift */,
 				043706C41E7D4D38001EB75E /* Notifications */,
 				043706DC1E7D4D38001EB75E /* NotificationsTests */,
 				043706E71E7D4D38001EB75E /* NotificationsUITests */,
@@ -102,6 +107,7 @@
 				043706C51E7D4D38001EB75E /* AppDelegate.swift */,
 				043706C71E7D4D38001EB75E /* ViewController.swift */,
 				043706C91E7D4D38001EB75E /* Main.storyboard */,
+				043706FA1E7D550A001EB75E /* SecondViewController.swift */,
 				043706CF1E7D4D38001EB75E /* Assets.xcassets */,
 				043706D11E7D4D38001EB75E /* LaunchScreen.storyboard */,
 				043706D41E7D4D38001EB75E /* Info.plist */,
@@ -264,6 +270,8 @@
 			files = (
 				043706CE1E7D4D38001EB75E /* Notifications.xcdatamodeld in Sources */,
 				043706C81E7D4D38001EB75E /* ViewController.swift in Sources */,
+				043706F71E7D4D72001EB75E /* ApplicationData.swift in Sources */,
+				043706FB1E7D550A001EB75E /* SecondViewController.swift in Sources */,
 				043706C61E7D4D38001EB75E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
